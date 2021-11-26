@@ -19,14 +19,24 @@ namespace NoMoreEdge
     {
 
         [STAThread]
+        static string urlmod(string url)
+        {
+            url = url.Replace("%3A", ":");
+            url = url.Replace("%3D", "=");
+            url = url.Replace("%2F", "/");
+            url = url.Replace("%3F", "?");
+            url = url.Replace("%25", "%");
+            url = url.Replace("%26", "&");
+            return url;
+        }
         static string urlType(string url)
         {
             string urltype = "";
-            if (url.Contains("Microsoft.Windows.Search") && url.Length > 116)
+            if (url.Contains("Microsoft.Windows.Search") && !url.Contains("redirect") && url.Contains("bing"))
             {
                 urltype = "searchword";
             }
-            else if (url.Contains("Microsoft.Windows.Search") && url.Length < 116) 
+            else if (url.Contains("Microsoft.Windows.Search")) 
             {
                 urltype = "searchurl";
             }
@@ -44,10 +54,7 @@ namespace NoMoreEdge
         {
 
             url = url.Substring(url.IndexOf("https"), url.Length - url.IndexOf("https"));
-            url = url.Replace("%3A", ":");
-            url = url.Replace("%3D", "=");
-            url = url.Replace("%2F", "/");
-            url = url.Replace("%3", "?");
+            url = urlmod(url);
             Console.WriteLine(url);
             return url;
         }
@@ -55,10 +62,7 @@ namespace NoMoreEdge
         {
             Console.WriteLine(url);
             url = url.Substring(url.IndexOf("http"), url.Length - url.IndexOf("http"));
-            url = url.Replace("%3A", ":");
-            url = url.Replace("%3D", "=");
-            url = url.Replace("%2F", "/");
-            url = url.Replace("%3", "?");
+            url = urlmod(url);
             Console.WriteLine(url);
             return url;
         }
@@ -85,7 +89,7 @@ namespace NoMoreEdge
             //string url = "microsoft-edge://https://www.google.com";
             //string url = "microsoft-edge:?upn=abc%40gmail.com&cid=8208f3b1a83e496b&source=Windows.Widgets&timestamp=1637894205027&url=https%3A%2F%2Fwww.msn.com%2Fen-in%2Fmoney%2Fnews%2Fblack-friday-sale-here-are-the-top-deals-on-iphones-oneplus-and-other-phones-you-can-t-miss%2Far-AAR82bF%3Focid%3Dwinp2octtaskbar";
             //string url = "microsoft-edge:?launchContext1=Microsoft.Windows.Search_cw5n1h2txyewy&url=http%3A%2F%2Fwww.amazon.in%2F";
-            //string url = "microsoft-edge:?upn=abc%40gmail.com&cid=8208f3b1a83e496b&source=Windows.Widgets&timestamp=1637941810457&url=https%3A%2F%2Fgo.microsoft.com%2Ffwlink%2F%3Flinkid%3D2163242";
+            //string url   = "microsoft-edge:?launchContext1=Microsoft.Windows.Search_cw5n1h2txyewy&url=https%3A%2F%2Fwww.bing.com%2FWS%2Fredirect%2F%3Fq%3Damazon.in%26url%3DaHR0cHM6Ly93d3cuYW1hem9uLmluL2luZGlhL3M%2Faz1pbmRpYQ%3D%3D%26form%3DWSBSTK%26cvid%3D7d3f9448e5de4260b68819b9887a9558%26rtk%3DSpSsrrKyXsxfoGahqv98I%252Fi3xOUBG9SnOILgundIYa8%252F1q%252Ffzsod5efeoSd94FDq";
 
 
             if (args.Length < 2)
