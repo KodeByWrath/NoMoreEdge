@@ -19,6 +19,7 @@ Current Feature Set--
 -Bing redirects working in default browser.
 
 <br>
+
 ## Installation
 
 1. Head over to releases
