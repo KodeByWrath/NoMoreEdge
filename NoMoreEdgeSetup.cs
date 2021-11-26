@@ -52,12 +52,7 @@ namespace NoMoreEdgeSetup
                 rkey = Microsoft.Win32.Registry.LocalMachine.CreateSubKey("SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\msedge.exe");
                 rkey.SetValue("Debugger", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\NoMoreEdge.exe");
                 rkey.Close();
-                MessageBox.Show("Installed NoMoreEdge");
-                ProcessStartInfo launcher = new ProcessStartInfo("https://github.com/HarshalKudale/NoMoreEdge")
-                {
-                    UseShellExecute = true
-                };
-                Process.Start(launcher);
+                MessageBox.Show("Installed NoMoreEdge - https://github.com/HarshalKudale/NoMoreEdge");
             }
             else 
             {
