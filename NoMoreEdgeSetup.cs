@@ -4,7 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using System.IO;
 using System.Net;
-
+using System.Diagnostics;
 /*
  * Copyright © 2017–2021 Harshal Kudale
  * SPDX-License-Identifier: MIT
@@ -38,7 +38,7 @@ namespace NoMoreEdgeSetup
                     using (var client = new WebClient())
                     {
                         ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-                        client.DownloadFile("https://github.com/HarshalKudale/NoMoreEdge/raw/main/NoMoreEdge.exe", destFile);
+                        client.DownloadFile("https://github.com/HarshalKudale/NoMoreEdge/raw/master/Executables/NoMoreEdge.exe", destFile);
                     }
                     File.Copy(edgepath,newedge,true);
 
@@ -53,6 +53,11 @@ namespace NoMoreEdgeSetup
                 rkey.SetValue("Debugger", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\NoMoreEdge.exe");
                 rkey.Close();
                 MessageBox.Show("Installed NoMoreEdge");
+                ProcessStartInfo launcher = new ProcessStartInfo("https://github.com/HarshalKudale/NoMoreEdge")
+                {
+                    UseShellExecute = true
+                };
+                Process.Start(launcher);
             }
             else 
             {
