@@ -6,8 +6,6 @@ Current Feature Set--
 
 -Redirect Windows Widgets URLs to default browser.
 
--One click setup.
-
 -No residue when uninstalled.
 
 -Non destructive (User can run edge from start menu if required).
