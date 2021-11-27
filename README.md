@@ -1,5 +1,5 @@
 # NoMoreEdge
-[![Download count)](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/1.0.0.1/total?label=Downloads)](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/)
+[![Download count)](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/releases/1.0.0.1/total?label=Downloads)](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/)
 
 Please unintstall and reinstall while installing new release. 
 Also from now on NoMoreEdge.exe will be linked from releases and not executable folder(they will not be updated.)
