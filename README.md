@@ -39,6 +39,7 @@ Code will be updated according to latest release.
 ## Download
 
 [Download latest stable release](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/download/NoMoreEdgeSetup.exe)
+<br>
 
 ### System Requirements
  |Minimum Requirements|Recommended
