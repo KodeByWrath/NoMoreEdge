@@ -111,7 +111,8 @@ Runs only when searched|☑| |☑ |☑|
 
 NoMoreEdge does not store or send user urls and search queries. Queries are modfied in realtime and never stored .
 
-File may get flagged by anitivirus. You are free do Download/Check/Compile code yourself.
+File may get flagged by Antivirus. You are free do Download/Check/Compile code yourself.
+[Virustotal](https://www.virustotal.com/gui/file/8b3c3b2eae6b034570e76e87cb32e036eaa24b31e106ab9db66513840e69c091?nocache=1)
 
 <br>
 
