@@ -40,5 +40,5 @@ Current Feature Set--
 
 NoMoreEdge does not store or send user urls and search queries. Queries are modfied in realtime and never stored .
 
-If Someone has issues the the Privacy measures, You are free do Download/Check/Compile code yourself.
+File may get flagged by anitivirus. You are free do Download/Check/Compile code yourself.
 
