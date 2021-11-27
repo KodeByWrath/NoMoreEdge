@@ -30,27 +30,29 @@ namespace NoMoreEdge
             return url;
         }
 
-        static string urlType(string url)
+        static UrlType urlType(string url)
         {
-            string urltype = "";
             if (url.Contains("Microsoft.Windows.Search") && !url.Contains("redirect") && url.Contains("bing"))
             {
-                urltype = "searchword";
-            }
-            else if (url.Contains("Microsoft.Windows.Search"))
-            {
-                urltype = "searchurl";
-            }
-            else if (url.Contains("Windows.Widgets"))
-            {
-                urltype = "widget";
-            }
-            else if (url.StartsWith("microsoft-edge:https") || url.StartsWith("microsoft-edge://https"))
-            {
-                urltype = "simple";
+                return UrlType.SearchWord;
             }
 
-            return urltype;
+            if (url.Contains("Microsoft.Windows.Search"))
+            {
+                return UrlType.SearchUrl;
+            }
+
+            if (url.Contains("Windows.Widgets"))
+            {
+                return UrlType.Widget;
+            }
+
+            if (url.StartsWith("microsoft-edge:https") || url.StartsWith("microsoft-edge://https"))
+            {
+                return UrlType.Simple;
+            }
+
+            return UrlType.Unknown;
         }
 
         static string widgetsurl(string url)
@@ -149,24 +151,23 @@ namespace NoMoreEdge
                     engine = args[0];
                 }
 
-                string urltype = urlType(url);
+                var urlType = urlType(url);
                 switch (urltype)
                 {
-                    case "searchword":
+                    case UrlType.SearchWord:
                         url = windwossearch(url, engine);
                         break;
-                    case "widget":
+                    case UrlType.Widget:
                         url = widgetsurl(url);
                         break;
-                    case "simple":
+                    case UrlType.Simple:
                         url = simpleurl(url);
                         break;
-                    case "searchurl":
+                    case UrlType.SearchUrl:
                         url = searchurl(url);
                         break;
                     default:
                         MessageBox.Show("Wrong URL");
-
                         break;
                 }
 
