@@ -18,7 +18,7 @@ namespace NoMoreEdge
     static class NoMoreEdge
     {
         [STAThread]
-        static string urlmod(string url)
+        static string UrlMod(string url)
         {
             url = url.Replace("%3A", ":");
             url = url.Replace("%3D", "=");
@@ -30,7 +30,7 @@ namespace NoMoreEdge
             return url;
         }
 
-        static UrlType urlType(string url)
+        static UrlType GetUrlType(string url)
         {
             if (url.Contains("Microsoft.Windows.Search") && !url.Contains("redirect") && url.Contains("bing"))
             {
@@ -55,26 +55,26 @@ namespace NoMoreEdge
             return UrlType.Unknown;
         }
 
-        static string widgetsurl(string url)
+        static string WidgetsUrl(string url)
         {
             url = url.Substring(url.IndexOf("https"), url.Length - url.IndexOf("https"));
-            url = urlmod(url);
+            url = UrlMod(url);
             Console.WriteLine(url);
 
             return url;
         }
 
-        static string searchurl(string url)
+        static string SearchUrl(string url)
         {
             Console.WriteLine(url);
             url = url.Substring(url.IndexOf("http"), url.Length - url.IndexOf("http"));
-            url = urlmod(url);
+            url = UrlMod(url);
             Console.WriteLine(url);
 
             return url;
         }
 
-        static string simpleurl(string url)
+        static string SimpleUrl(string url)
         {
             int windex = url.IndexOf("https");
             url = url.Substring(windex, url.Length - windex);
@@ -82,7 +82,7 @@ namespace NoMoreEdge
             return url;
         }
 
-        static string defEngine(string url, string engine)
+        static string DefEngine(string url, string engine)
         {
             switch (engine)
             {
@@ -118,13 +118,13 @@ namespace NoMoreEdge
             return url;
         }
 
-        static string windwossearch(string url, string engine)
+        static string WindowsSearch(string url, string engine)
         {
             url = url.Substring(url.IndexOf("https"), url.Length - url.IndexOf("https"));
             url = url.Substring(42, url.IndexOf("%26") - 42);
             url = url.Replace("%2B", "+");
 
-            return defEngine(url, engine);
+            return DefEngine(url, engine);
         }
 
         static void Main(string[] args)
@@ -151,20 +151,20 @@ namespace NoMoreEdge
                     engine = args[0];
                 }
 
-                var urlType = urlType(url);
+                var urlType = GetUrlType(url);
                 switch (urltype)
                 {
                     case UrlType.SearchWord:
-                        url = windwossearch(url, engine);
+                        url = WindowsSearch(url, engine);
                         break;
                     case UrlType.Widget:
-                        url = widgetsurl(url);
+                        url = WidgetsUrl(url);
                         break;
                     case UrlType.Simple:
-                        url = simpleurl(url);
+                        url = SimpleUrl(url);
                         break;
                     case UrlType.SearchUrl:
-                        url = searchurl(url);
+                        url = SearchUrl(url);
                         break;
                     default:
                         MessageBox.Show("Wrong URL");
