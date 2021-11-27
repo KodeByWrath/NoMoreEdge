@@ -72,13 +72,46 @@ namespace NoMoreEdge
             url = url.Substring(windex, url.Length - windex);
             return url;
         }
-        static string windwossearch(string url)
+        static string defEngine(string url,string engine) 
+        {
+            switch (engine) 
+            {
+                case "google":
+                    url = "https://www.google.com/search?q=" + url;
+                    break;
+                case "duckduckgo":
+                    url = "https://duckduckgo.com/?q=" + url;
+                    break;
+                case "baidu":
+                    url = "https://www.baidu.com/s?wd=" + url;
+                    break;
+                case "ecosia":
+                    url = "https://www.ecosia.org/search?q=" + url;
+                    break;
+                case "sogou":
+                    url = "https://www.sogou.com/web?query=" + url;
+                    break;
+                case "yahoo":
+                    url = "https://search.yahoo.com/search?p=" + url;
+                    break;
+                case "yandex":
+                    url = "https://yandex.com/search/?text=" + url;
+                    break;
+                case "ask":
+                    url = "https://www.ask.com/web?q=" + url;
+                    break;
+                default:
+                        MessageBox.Show("wrong engine");
+                        break;
+            }
+            return url;
+        }
+        static string windwossearch(string url,string engine)
         {
             url = url.Substring(url.IndexOf("https"), url.Length - url.IndexOf("https"));
             url = url.Substring(42, url.IndexOf("%26") - 42);
             url = url.Replace("%2B", "+");
-            url = "https://www.google.com/search?q=" + url;
-            return url;
+            return defEngine(url, engine);
 
         }
         static void Main(string[] args)
@@ -90,7 +123,7 @@ namespace NoMoreEdge
             //string url   = "microsoft-edge:?launchContext1=Microsoft.Windows.Search_cw5n1h2txyewy&url=https%3A%2F%2Fwww.bing.com%2FWS%2Fredirect%2F%3Fq%3Damazon.in%26url%3DaHR0cHM6Ly93d3cuYW1hem9uLmluL2luZGlhL3M%2Faz1pbmRpYQ%3D%3D%26form%3DWSBSTK%26cvid%3D7d3f9448e5de4260b68819b9887a9558%26rtk%3DSpSsrrKyXsxfoGahqv98I%252Fi3xOUBG9SnOILgundIYa8%252F1q%252Ffzsod5efeoSd94FDq";
             //string url = "microsoft-edge:https://www.bing.com/images/search?q=walker+bay+south+africa+whales&filters=IsConversation:%22True%22+BTWLKey:%22WalkerBaySouthAfrica%22+BTWLType:%22Trivia%22&trivia=1&qft=+filterui:photo-photo&FORM=EMSDS0";
 
-            if (args.Length < 2)
+            if (args.Length < 3)
             {
                 var p = new Process();
                 p.StartInfo.FileName = "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge_solo.exe";
@@ -99,11 +132,17 @@ namespace NoMoreEdge
             else
             {
                 string url = args[args.Length - 1];
+                string engine = "google";
+                if (args.Length == 4) 
+                {
+                    engine = args[0];
+                }
+
                 string urltype = urlType(url);
                 switch (urltype)
                 {
                     case "searchword":
-                        url = windwossearch(url);
+                        url = windwossearch(url,engine);
                         break;
                     case "widget":
                         url = widgetsurl(url);
@@ -116,6 +155,7 @@ namespace NoMoreEdge
                         break;
                     default:
                         MessageBox.Show("Wrong URL");
+
                         break;
                 }
                 ProcessStartInfo launcher = new ProcessStartInfo(url)
