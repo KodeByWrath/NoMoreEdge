@@ -44,7 +44,7 @@ namespace NoMoreEdge
             {
                 urltype = "widget";
             }
-            else if (url.Length < 50)
+            else if (url.StartsWith("microsoft-edge:https") || url.StartsWith("microsoft-edge://https"))
             {
                 urltype = "simple";
             }
@@ -68,10 +68,8 @@ namespace NoMoreEdge
         }
         static string simpleurl(string url)
         {
-            int windex = url.IndexOf("www");
+            int windex = url.IndexOf("https");
             url = url.Substring(windex, url.Length - windex);
-
-
             return url;
         }
         static string windwossearch(string url)
@@ -90,7 +88,7 @@ namespace NoMoreEdge
             //string url = "microsoft-edge:?upn=abc%40gmail.com&cid=8208f3b1a83e496b&source=Windows.Widgets&timestamp=1637894205027&url=https%3A%2F%2Fwww.msn.com%2Fen-in%2Fmoney%2Fnews%2Fblack-friday-sale-here-are-the-top-deals-on-iphones-oneplus-and-other-phones-you-can-t-miss%2Far-AAR82bF%3Focid%3Dwinp2octtaskbar";
             //string url = "microsoft-edge:?launchContext1=Microsoft.Windows.Search_cw5n1h2txyewy&url=http%3A%2F%2Fwww.amazon.in%2F";
             //string url   = "microsoft-edge:?launchContext1=Microsoft.Windows.Search_cw5n1h2txyewy&url=https%3A%2F%2Fwww.bing.com%2FWS%2Fredirect%2F%3Fq%3Damazon.in%26url%3DaHR0cHM6Ly93d3cuYW1hem9uLmluL2luZGlhL3M%2Faz1pbmRpYQ%3D%3D%26form%3DWSBSTK%26cvid%3D7d3f9448e5de4260b68819b9887a9558%26rtk%3DSpSsrrKyXsxfoGahqv98I%252Fi3xOUBG9SnOILgundIYa8%252F1q%252Ffzsod5efeoSd94FDq";
-
+            //string url = "microsoft-edge:https://www.bing.com/images/search?q=walker+bay+south+africa+whales&filters=IsConversation:%22True%22+BTWLKey:%22WalkerBaySouthAfrica%22+BTWLType:%22Trivia%22&trivia=1&qft=+filterui:photo-photo&FORM=EMSDS0";
 
             if (args.Length < 2)
             {
