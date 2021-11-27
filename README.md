@@ -7,7 +7,7 @@ Code will be updated according to latest release.
 
 Current Feature Set--
 
--Redirect Windows search to default browser with Bing to Google conversion.
+-Redirect Windows search to default browser with Bing to ~~Google conversion~~ search engine of selected while installing.
 
 -Redirect Windows Widgets URLs to default browser.
 
