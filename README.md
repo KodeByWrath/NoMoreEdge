@@ -1,5 +1,8 @@
 # NoMoreEdge
-[![Github All Releases](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/total.svg)]()
+[![Download count)](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/1.0.1.0/total?label=Downloads)](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+![Language: C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 
 Please unintstall and reinstall while installing new release. 
 Also from now on NoMoreEdge.exe will be linked from releases and not executable folder(they will not be updated.)
@@ -7,7 +10,7 @@ Code will be updated according to latest release.
 
 Current Feature Set--
 
--Redirect Windows search to default browser with Bing to Google conversion.
+-Redirect Windows search to default browser with Bing to ~~Google conversion~~ search engine of selected while installing.
 
 -Redirect Windows Widgets URLs to default browser.
 
