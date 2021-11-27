@@ -10,6 +10,12 @@ Please unintstall and reinstall while installing new release.
 Also from now on NoMoreEdge.exe will be linked from releases and not executable folder(they will not be updated.)
 Code will be updated according to latest release.
 
+## Disclaimer
+
+### PLEASE NOTE: NoMoreEdge is still BETA. Changes are to be expected, and performance to be improved.
+
+<br>
+
 Current Feature Set--
 
 -Redirect Windows search to default browser with Bing to ~~Google conversion~~ search engine of selected while installing.
@@ -36,15 +42,38 @@ Current Feature Set--
 
 2. Download latest releast
 
-3. Run the set up as admin and you are done.
+3. Run the setup 
+ 
+4. Select the search engine 
+
+5.click install button to install
 
 
 <br>
 
 ## Uninstallation
-1.Run the setup file again.
+1.Run the setup.
 
-2.If setup founds the installed NoMoreEdge, it will automagically revert all related changes.
+2.Click uninstall, it will revert all related changes.
+
+<br>
+
+## Update NoMoreEdge 
+1.Download setup from latest release.
+
+2.Run the setup file.
+
+3.Click uninstall to uninstall old NoMoreEdge.
+
+4.Click install to install updated NoMoreEdge.
+
+<br>
+
+## Update search engine 
+1. Download NoMoreEdge setup v1.0.1.0 or higher. 
+2. Select preffered search engine
+3. click update to update preference.
+(Uninstall and reinstall might be needed in some cases.)
 
 ## Privacy
 
