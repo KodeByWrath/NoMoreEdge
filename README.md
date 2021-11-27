@@ -1,5 +1,5 @@
 # NoMoreEdge
-[![Github All Releases](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/total.svg)]()
+[![Github All Releases](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/latest/total.svg)]()
 
 Please unintstall and reinstall while installing new release. 
 Also from now on NoMoreEdge.exe will be linked from releases and not executable folder(they will not be updated.)
