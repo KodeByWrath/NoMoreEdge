@@ -1,4 +1,5 @@
 # NoMoreEdge
+[![Github All Releases](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/total.svg)]()
 
 Current Feature Set--
 
