@@ -16,7 +16,7 @@ Code will be updated according to latest release.
 
 <br>
 
-Current Feature Set--
+## Current Feature Set
 
 -Redirect Windows search to default browser with Bing to ~~Google conversion~~ search engine of selected while installing.
 
@@ -33,6 +33,37 @@ Current Feature Set--
 -Bing redirects working in default browser.
 
 -Added windows spotlight
+
+<br>
+
+## Download
+
+[Download latest stable release](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/download/NoMoreEdgeSetup.exe)
+
+### System Requirements
+ |Minimum Requirements|Recommended
+----|----|----
+OS|Windows 8.1|Latest Windows 11 Build
+CPU|32-bit Single Core|64-bit Dual Core or Higher
+RAM (Memory)|20MB Free|50MB Free
+Disk (Storage)|3MB Free|10MB Free
+
+<br>
+
+## Program Comparisons (from MSEdge Redirect)
+ |Edge Deflector|ChrEdgeFkOff|NoMoreEdge|Search Deflector|MSEdge Redirect
+----|----|----|----|----|----
+Redirection Modes|URI Handler<br/><br/><br/>|IFEO<br/><br/><br/>|IFEO<br/><br/><br/>|URI Handler<br/><br/><br/>|URI Handler,<br/> URI Detection,<br/>or IFEO
+Redirects Search|☑|☑|☑|☑|☑
+Installs without Admin|☑| | | |☑, Optionally <sup>*</sup>
+Windows 11 Support| |☑|☑| |☑
+Windows 10 21H2+ Support| |☑|☑| |☑
+Installs System Wide| |☑|☑|☑, Optionally|☑, Optionally <sup>†</sup>
+Update Checker Module| | |☑|☑|☑
+Search Engine Customizations| | |☑, 8|☑, 14|9 Coming Soon
+Customizable Edge Support| | | | |☑
+Prevents IFEO Infinite Looping| | | | |☑
+Runs only when searched|☑| |☑ |☑|
 
 <br>
 
