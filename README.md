@@ -16,6 +16,8 @@ Current Feature Set--
 
 -Bing redirects working in default browser.
 
+-Added windows spotlight
+
 <br>
 
 ## Installation
