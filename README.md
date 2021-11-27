@@ -113,3 +113,15 @@ NoMoreEdge does not store or send user urls and search queries. Queries are modf
 
 File may get flagged by anitivirus. You are free do Download/Check/Compile code yourself.
 
+<br>
+
+##FAQ
+
+### It isn’t working for me!
+
+Make sure installed application using setup from latest release, then run `microsoft-edge:https://google.com` using the `Windows` + `R` keys. If that is properly redirected, [file a bug report!](https://github.com/rcmaehl/MSEdgeRedirect/issues/new?assignees=&labels=&template=bug_report.md&title=)
+
+### My search engine is still google, I want something else.
+
+Dowload setup from latest release .Uninstall using new setup. Select desired search engine. Click install. One can also update the search engine without reinstall if the NoMoreEdge.exe is updated.
+[Latest release](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/download/NoMoreEdgeSetup.exe)
