@@ -115,7 +115,7 @@ File may get flagged by anitivirus. You are free do Download/Check/Compile code 
 
 <br>
 
-##FAQ
+## FAQ
 
 ### It isn’t working for me!
 
