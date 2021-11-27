@@ -17,7 +17,6 @@ namespace NoMoreEdge
 {
     static class NoMoreEdge
     {
-
         [STAThread]
         static string urlmod(string url)
         {
@@ -27,8 +26,10 @@ namespace NoMoreEdge
             url = url.Replace("%3F", "?");
             url = url.Replace("%25", "%");
             url = url.Replace("%26", "&");
+
             return url;
         }
+
         static string urlType(string url)
         {
             string urltype = "";
@@ -36,7 +37,7 @@ namespace NoMoreEdge
             {
                 urltype = "searchword";
             }
-            else if (url.Contains("Microsoft.Windows.Search")) 
+            else if (url.Contains("Microsoft.Windows.Search"))
             {
                 urltype = "searchurl";
             }
@@ -48,33 +49,40 @@ namespace NoMoreEdge
             {
                 urltype = "simple";
             }
+
             return urltype;
         }
+
         static string widgetsurl(string url)
         {
-
             url = url.Substring(url.IndexOf("https"), url.Length - url.IndexOf("https"));
             url = urlmod(url);
             Console.WriteLine(url);
+
             return url;
         }
+
         static string searchurl(string url)
         {
             Console.WriteLine(url);
             url = url.Substring(url.IndexOf("http"), url.Length - url.IndexOf("http"));
             url = urlmod(url);
             Console.WriteLine(url);
+
             return url;
         }
+
         static string simpleurl(string url)
         {
             int windex = url.IndexOf("https");
             url = url.Substring(windex, url.Length - windex);
+
             return url;
         }
-        static string defEngine(string url,string engine) 
+
+        static string defEngine(string url, string engine)
         {
-            switch (engine) 
+            switch (engine)
             {
                 case "google":
                     url = "https://www.google.com/search?q=" + url;
@@ -101,19 +109,22 @@ namespace NoMoreEdge
                     url = "https://www.ask.com/web?q=" + url;
                     break;
                 default:
-                        MessageBox.Show("wrong engine");
-                        break;
+                    MessageBox.Show("wrong engine");
+                    break;
             }
+
             return url;
         }
-        static string windwossearch(string url,string engine)
+
+        static string windwossearch(string url, string engine)
         {
             url = url.Substring(url.IndexOf("https"), url.Length - url.IndexOf("https"));
             url = url.Substring(42, url.IndexOf("%26") - 42);
             url = url.Replace("%2B", "+");
-            return defEngine(url, engine);
 
+            return defEngine(url, engine);
         }
+
         static void Main(string[] args)
         {
             //string url = "microsoft-edge:?launchContext1=Microsoft.Windows.Search_cw5n1h2txyewy&url=https%3A%2F%2Fwww.bing.com%2Fsearch%3Fq%3Dreddit%2Bwebsite%26filters%3Dufn%253a%2522Reddit%2522%2Bsid%253a%252220757754-e543-a49f-c338-3463e22655c3%2522%26form%3DWSBEDG%26qs%3DMB%26cvid%3Daafc035c9d924cd493477b7f4854107d%26pq%3Dreddit%26cc%3DIN%26setlang%3Den-US%26nclid%3DA7CDEE0718C7A2E6219EAA07F2209F3B%26ts%3D1637862572948%26nclidts%3D1637862572%26tsms%3D948%26wsso%3DModerate";
@@ -133,7 +144,7 @@ namespace NoMoreEdge
             {
                 string url = args[args.Length - 1];
                 string engine = "google";
-                if (args.Length == 4) 
+                if (args.Length == 4)
                 {
                     engine = args[0];
                 }
@@ -142,7 +153,7 @@ namespace NoMoreEdge
                 switch (urltype)
                 {
                     case "searchword":
-                        url = windwossearch(url,engine);
+                        url = windwossearch(url, engine);
                         break;
                     case "widget":
                         url = widgetsurl(url);
@@ -158,13 +169,13 @@ namespace NoMoreEdge
 
                         break;
                 }
+
                 ProcessStartInfo launcher = new ProcessStartInfo(url)
                 {
                     UseShellExecute = true
                 };
                 Process.Start(launcher);
             }
-
         }
     }
 }
