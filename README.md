@@ -120,7 +120,7 @@ File may get flagged by Antivirus. You are free do Download/Check/Compile code y
 
 ### It isn’t working for me!
 
-Make sure installed application using setup from latest release, then run `microsoft-edge:https://google.com` using the `Windows` + `R` keys. If that is properly redirected, [file a bug report!](https://github.com/rcmaehl/MSEdgeRedirect/issues/new?assignees=&labels=&template=bug_report.md&title=)
+Make sure installed application using setup from latest release, then run `microsoft-edge:https://google.com` using the `Windows` + `R` keys. If that is properly redirected, [file a bug report!](https://github.com/HarshalKudale/NoMoreEdge/issues/new?assignees=&labels=&template=bug_report.md&title=)
 
 ### My search engine is still google, I want something else.
 
