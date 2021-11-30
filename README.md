@@ -17,23 +17,21 @@ Code will be updated according to latest release.
 <br>
 
 ## Current Feature Set
+-Search engine preference support.
 
--Redirect Windows search to default browser with Bing to ~~Google conversion~~ search engine of selected while installing.
+-DuckDuckGo bangs in windows search (with search engine selected).
 
--Redirect Windows Widgets URLs to default browser.
+-Works with any browser. Even Edge (Stable/Beta or Dev) browser.Only search Engine will be changed in case edge is default.
 
--No residue when uninstalled.
+-url searching support in windows search (searching "reddit.com" will open reddit website instaed of https://www.google.com/search?q=reddit.com)
 
--Non destructive (User can run edge from start menu if required).
+-windows widgets support
 
--Fast
+-windows spotlight support
 
--Website searched in windows searched can now be opened in default browser.
+-can change search engine any time using setup (without reinstall)
 
--Bing redirects working in default browser.
-
--Added windows spotlight
-
+-
 <br>
 
 ## Download
@@ -62,8 +60,8 @@ Windows 10 21H2+ Support| |☑|☑| |☑
 Installs System Wide| |☑|☑|☑, Optionally|☑, Optionally <sup>†</sup>
 Update Checker Module| | |☑|☑|☑
 Search Engine Customizations| | |☑, 8|☑, 14|9 Coming Soon
-Customizable Edge Support| | | | |☑
-Prevents IFEO Infinite Looping| | | | |☑
+Customizable Edge Support| | |☑| |☑
+Prevents IFEO Infinite Looping| | |☑| |☑
 Runs only when searched|☑| |☑ |☑|
 
 <br>
@@ -95,9 +93,7 @@ Runs only when searched|☑| |☑ |☑|
 
 2.Run the setup file.
 
-3.Click uninstall to uninstall old NoMoreEdge.
-
-4.Click install to install updated NoMoreEdge.
+3.Click install to install updated NoMoreEdge.
 
 <br>
 
@@ -124,5 +120,5 @@ Make sure installed application using setup from latest release, then run `micro
 
 ### My search engine is still google, I want something else.
 
-Dowload setup from latest release .Uninstall using new setup. Select desired search engine. Click install. One can also update the search engine without reinstall if the NoMoreEdge.exe is updated.
+Dowload setup from latest release. Select desired search engine. Click install. One can also update the search engine without reinstall if the NoMoreEdge.exe is updated.
 [Latest release](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/download/NoMoreEdgeSetup.exe)
