@@ -62,7 +62,7 @@ Update Checker Module| | |☑|☑|☑
 Search Engine Customizations| | |☑, 8|☑, 14|9 Coming Soon
 Customizable Edge Support| | |☑| |☑
 Prevents IFEO Infinite Looping| | |☑| |☑
-Runs only when searched|☑| |☑ |☑|
+Running time|When seached| |When Searched |When Searched|Always
 DuckDuckGo bang support|| | |☑|
 
 <br>
