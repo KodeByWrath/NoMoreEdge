@@ -31,7 +31,6 @@ Code will be updated according to latest release.
 
 -can change search engine any time using setup (without reinstall)
 
--
 <br>
 
 ## Download
