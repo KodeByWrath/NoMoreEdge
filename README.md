@@ -63,6 +63,7 @@ Search Engine Customizations| | |☑, 8|☑, 14|9 Coming Soon
 Customizable Edge Support| | |☑| |☑
 Prevents IFEO Infinite Looping| | |☑| |☑
 Runs only when searched|☑| |☑ |☑|
+DuckDuckGo bang support|| | |☑|
 
 <br>
 
