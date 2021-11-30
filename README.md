@@ -49,7 +49,7 @@ Disk (Storage)|3MB Free|10MB Free
 
 <br>
 
-## Program Comparisons (from MSEdge Redirect)
+## Program Comparisons
  |Edge Deflector|ChrEdgeFkOff|NoMoreEdge|Search Deflector|MSEdge Redirect
 ----|----|----|----|----|----
 Redirection Modes|URI Handler<br/><br/><br/>|IFEO<br/><br/><br/>|IFEO<br/><br/><br/>|URI Handler<br/><br/><br/>|URI Handler,<br/> URI Detection,<br/>or IFEO
