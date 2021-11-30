@@ -1,5 +1,5 @@
 # NoMoreEdge
-[![Download count)](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/latest/total?label=Downloads)](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/)
+[![Download count)](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/total?label=Downloads)](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/)
 [![Download](https://img.shields.io/github/v/release/HarshalKudale/NoMoreEdge)](https://github.com/rcmaehl/MSEdgeRedirect/releases/latest/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PayPal](https://img.shields.io/badge/Donate%20on-PayPal-00457C.svg?logo=paypal)](https://paypal.me/harshalkudale)
