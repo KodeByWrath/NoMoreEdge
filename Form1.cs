@@ -33,7 +33,7 @@ namespace NoMoreEdgeSetup
         static string targetPath = @"C:\PROGRA~2\Microsoft\Edge\Application";
         static string destFile = System.IO.Path.Combine(targetPath, fileName);
         static string edgepath = System.IO.Path.Combine(targetPath, edgeaName);
-        static string newedge = System.IO.Path.Combine(targetPath, "msedge_solo.exe");
+        static string newedge = System.IO.Path.Combine(targetPath, "msedge_backup.exe");
         static string engine = "google";
         private void btn_install_Click(object sender, EventArgs e)
         {
@@ -70,9 +70,9 @@ namespace NoMoreEdgeSetup
             engine = ask.Name;
         }
 
-        private void baidu_CheckedChanged(object sender, EventArgs e)
+        private void brave_CheckedChanged(object sender, EventArgs e)
         {
-            engine = baidu.Name;
+            engine = brave.Name;
         }
 
         private void ecosia_CheckedChanged(object sender, EventArgs e)
