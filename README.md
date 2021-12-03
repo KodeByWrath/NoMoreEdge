@@ -6,7 +6,7 @@
 
 ![Language: C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 
-Please unintstall and reinstall while installing new release. 
+Please uninstall and reinstall while installing new release. 
 Also from now on NoMoreEdge.exe will be linked from releases and not executable folder(they will not be updated.)
 Code will be updated according to latest release.
 
