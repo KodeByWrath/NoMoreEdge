@@ -1,13 +1,13 @@
 # NoMoreEdge
-[![Download count)](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/1.0.1.0/total?label=Downloads)](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/)
+[![Download count)](https://img.shields.io/github/downloads/HarshalKudale/NoMoreEdge/total?label=Downloads)](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/)
 [![Download](https://img.shields.io/github/v/release/HarshalKudale/NoMoreEdge)](https://github.com/rcmaehl/MSEdgeRedirect/releases/latest/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![PayPal](https://img.shields.io/badge/Donate%20on-PayPal-00457C.svg?logo=paypal)](https://paypal.me/harshalkudale)
 
 ![Language: C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 
-Please unintstall and reinstall while installing new release. 
-Also from now on NoMoreEdge.exe will be linked from releases and not executable folder(they will not be updated.)
+
+Also from now on NoMoreEdge.exe will be linked from releases and not executable folder(Executables from this folders are just for reference).
 Code will be updated according to latest release.
 
 ## Disclaimer
@@ -31,7 +31,6 @@ Code will be updated according to latest release.
 
 -can change search engine any time using setup (without reinstall)
 
--
 <br>
 
 ## Download
@@ -49,7 +48,7 @@ Disk (Storage)|3MB Free|10MB Free
 
 <br>
 
-## Program Comparisons (from MSEdge Redirect)
+## Program Comparisons
  |Edge Deflector|ChrEdgeFkOff|NoMoreEdge|Search Deflector|MSEdge Redirect
 ----|----|----|----|----|----
 Redirection Modes|URI Handler<br/><br/><br/>|IFEO<br/><br/><br/>|IFEO<br/><br/><br/>|URI Handler<br/><br/><br/>|URI Handler,<br/> URI Detection,<br/>or IFEO
@@ -59,11 +58,10 @@ Windows 11 Support| |☑|☑| |☑
 Windows 10 21H2+ Support| |☑|☑| |☑
 Installs System Wide| |☑|☑|☑, Optionally|☑, Optionally <sup>†</sup>
 Update Checker Module| | |☑|☑|☑
-Search Engine Customizations| | |☑, 8|☑, 14|9 Coming Soon
+Search Engine Customizations| | |8☑,+DDG bangs|☑, 14|
 Customizable Edge Support| | |☑| |☑
 Prevents IFEO Infinite Looping| | |☑| |☑
-Running time|When seached| |When Searched |When Searched|Always
-DuckDuckGo bang support|| | |☑|
+Running time|When seached| |When Searched |When Searched|When Searched/Always
 
 <br>
 
