@@ -37,7 +37,7 @@ namespace NoMoreEdgeSetup
                     using (var client = new WebClient())
                     {
                         ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-                        client.DownloadFile("https://github.com/HarshalKudale/NoMoreEdge/releases/download/1.5.0.0/NoMoreEdge.exe", destFile);
+                        client.DownloadFile("https://github.com/HarshalKudale/NoMoreEdge/releases/download/1.5.0.3/NoMoreEdge.exe", destFile);
                     }
                     File.Copy(edgepath, newedge, true);
                     File.Copy(edgepath.Replace("Edge","Edge Beta"), newedge.Replace("Edge", "Edge Beta"), true);

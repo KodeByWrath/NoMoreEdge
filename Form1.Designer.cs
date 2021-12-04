@@ -84,7 +84,7 @@ namespace NoMoreEdgeSetup
             this.btn_update.Name = "btn_update";
             this.btn_update.Size = new System.Drawing.Size(97, 32);
             this.btn_update.TabIndex = 3;
-            this.btn_update.Text = "Update";
+            this.btn_update.Text = "Set Engine";
             this.btn_update.UseVisualStyleBackColor = true;
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 

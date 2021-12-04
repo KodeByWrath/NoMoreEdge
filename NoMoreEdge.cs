@@ -17,7 +17,12 @@ namespace NoMoreEdge
 {
     static class NoMoreEdge
     {
-
+        static string DotSlash(string url)
+        {
+            url = url.Replace("%3A", ":");
+            url = url.Replace("%2F", "/");
+            return url;
+        }
         [STAThread]
         static Boolean check_bang(string url)
         {
@@ -26,6 +31,7 @@ namespace NoMoreEdge
             else
                 return false;
         }
+
 
         static string defEngine(string engine)
         {
@@ -78,7 +84,7 @@ namespace NoMoreEdge
             //string url = "microsoft-edge:?launchContext1=Microsoft.Windows.Search_cw5n1h2txyewy&url=http%3A%2F%2Fwww.amazon.in%2F";
             //string url = "microsoft-edge:?launchContext1=Microsoft.Windows.Search_cw5n1h2txyewy&url=https%3A%2F%2Fwww.bing.com%2FWS%2Fredirect%2F%3Fq%3Damazon.in%26url%3DaHR0cHM6Ly93d3cuYW1hem9uLmluL2luZGlhL3M%2Faz1pbmRpYQ%3D%3D%26form%3DWSBSTK%26cvid%3D862ffe62e8aa4be1b7b103c5ac4d5d08%26rtk%3DRShhlsdPnBoyLzMkHlFi3uiMwVjRyHBlh%252FV1sy1YmaiOwrtpcAVI%252FIXH0ospojDn";
             //string url = "microsoft-edge:https://www.bing.com/images/search?q=walker+bay+south+africa+whales&filters=IsConversation:%22True%22+BTWLKey:%22WalkerBaySouthAfrica%22+BTWLType:%22Trivia%22&trivia=1&qft=+filterui:photo-photo&FORM=EMSDS0";
-
+            //string url = "microsoft-edge:?upn=harshalkudale56ms%40outlook.com&cid=8208f3b1a83e496b&source=Windows.Widgets&timestamp=1638555634754&url=https%3A%2F%2Fwww.bing.com%2Fsearch%3Fform%3DU627SB%26pc%3DU627%26cc%3DIN%26setLang%3Den-US%26q%3D%2521youtube%2Bsong";
 
             if (args[args.Length - 1].Contains("microsoft-edge"))
             //if(true)
@@ -90,15 +96,22 @@ namespace NoMoreEdge
                     engine = args[0];
                 }
                 url = url.Substring(url.IndexOf("http"), url.Length - url.IndexOf("http"));
-                if (url.Contains("%26") && !url.Contains("redirect"))
+                if (url.Contains("https%3A%2F%2Fwww.bing.com%2Fsearch%3Fq%3D") && !url.Contains("redirect"))
                     url = url.Substring(url.IndexOf("http"), url.IndexOf("%26"));
+                if (url.Contains("https%3A%2F%2Fwww.bing.com%2Fsearch%3Fform%3D"))
+                {
+                    url = url.Substring(url.IndexOf("26q%3D")+6, url.Length - (url.IndexOf("26q%3D")+6));
+                    url = "https://www.bing.com/search?q=" + url;
+                }
                 if (check_bang(url))
                     engine = "duckduckgo";
-                url = DecodeUrlString(url);
-                MessageBox.Show(url);
+
+                if (url.Contains("redirect"))
+                { url = DotSlash(url); }
+                else
+                { url = DecodeUrlString(url); }
                 url = url.Replace("https://www.bing.com/search?q=", defEngine(engine));
                 Uri uri = new(url.ToString());
-                Uri.UnescapeDataString(url);
                 ProcessStartInfo launcher = new ProcessStartInfo(uri.ToString())
                 {
                     UseShellExecute = true
