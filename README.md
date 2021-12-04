@@ -43,8 +43,8 @@ Code will be updated according to latest release.
 ----|----|----
 OS|Windows 8.1|Latest Windows 11 Build
 CPU|32-bit Single Core|64-bit Dual Core or Higher
-RAM (Memory)|20MB Free|50MB Free
-Disk (Storage)|3MB Free|10MB Free
+RAM (Memory)|80MB Free|200MB Free
+Disk (Storage)|5MB Free|20MB Free
 
 <br>
 
