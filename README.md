@@ -23,7 +23,7 @@ Code will be updated according to latest release.
 
 -Works with any browser. Even Edge (Stable/Beta or Dev) browser.Only search Engine will be changed in case edge is default.
 
--url searching support in windows search (searching "reddit.com" will open reddit website instaed of https://www.google.com/search?q=reddit.com)
+-url searching support in windows search (searching "reddit.com" will open Reddit website instead of https://www.google.com/search?q=reddit.com)
 
 -windows widgets support
 
@@ -58,7 +58,7 @@ Windows 11 Support| |☑|☑| |☑
 Windows 10 21H2+ Support| |☑|☑| |☑
 Installs System Wide| |☑|☑|☑, Optionally|☑, Optionally <sup>†</sup>
 Update Checker Module| | |☑|☑|☑
-Search Engine Customizations| | |8☑,+DDG bangs|☑, 14|
+Search Engine Customization| | |8☑,+DDG bangs|☑, 14|
 Customizable Edge Support| | |☑| |☑
 Prevents IFEO Infinite Looping| | |☑| |☑
 Running time|When seached| |When Searched |When Searched|When Searched/Always
@@ -69,7 +69,7 @@ Running time|When seached| |When Searched |When Searched|When Searched/Always
 
 1. Head over to releases
 
-2. Download latest releast
+2. Download latest release
 
 3. Run the setup 
  
@@ -104,7 +104,7 @@ Running time|When seached| |When Searched |When Searched|When Searched/Always
 
 ## Privacy
 
-NoMoreEdge does not store or send user urls and search queries. Queries are modfied in realtime and never stored .
+NoMoreEdge does not store or send user URLs and search queries. Queries are modfied in real time and never stored .
 
 File may get flagged by Antivirus. You are free do Download/Check/Compile code yourself.
 [Virustotal](https://www.virustotal.com/gui/file/8b3c3b2eae6b034570e76e87cb32e036eaa24b31e106ab9db66513840e69c091?nocache=1)
@@ -117,7 +117,7 @@ File may get flagged by Antivirus. You are free do Download/Check/Compile code y
 
 Make sure installed application using setup from latest release, then run `microsoft-edge:https://google.com` using the `Windows` + `R` keys. If that is properly redirected, [file a bug report!](https://github.com/HarshalKudale/NoMoreEdge/issues/new?assignees=&labels=&template=bug_report.md&title=)
 
-### My search engine is still google, I want something else.
+### My search engine is still Google, I want something else.
 
-Dowload setup from latest release. Select desired search engine. Click install. One can also update the search engine without reinstall if the NoMoreEdge.exe is updated.
-[Latest release](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/download/NoMoreEdgeSetup.exe)
+Download setup from latest release. Select desired search engine. Click install. One can also update the search engine without reinstall if the NoMoreEdge.exe is updated.
+[Latest release](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/download/NoMoreEdgeSetup.exe).
