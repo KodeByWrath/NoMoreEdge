@@ -59,7 +59,7 @@ Windows 11 Support| |☑|☑| |☑
 Windows 10 21H2+ Support| |☑|☑| |☑
 Installs System Wide| |☑|☑|☑, Optionally|☑, Optionally <sup>†</sup>
 Update Checker Module| | |☑|☑|☑
-Search Engine Customization| | |8☑,+DDG bangs|☑, 14|
+Search Engine Customization| | |8☑,+DDG bangs|14☑|9☑
 Customizable Edge Support| | |☑| |☑
 Prevents IFEO Infinite Looping| | |☑| |☑
 Running time|When seached| |When Searched |When Searched|When Searched/Always
