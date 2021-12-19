@@ -15,24 +15,23 @@ Code will be updated according to latest release.
 
 ### PLEASE NOTE: NoMoreEdge is still BETA. Changes are to be expected, and performance to be improved.
 
-<br>
-
+- - - - -
 ## Current Feature Set
--Search engine preference support.
+* Search engine preference support.
 
--DuckDuckGo bangs in windows search (with search engine selected).
+* DuckDuckGo bangs in windows search (with search engine selected).
 
--Works with any browser. Even Edge (Stable/Beta or Dev) browser.Only search Engine will be changed in case edge is default.
+* Works with any browser. Even Edge (Stable/Beta or Dev) browser.Only search Engine will be changed in case edge is default.
 
--url searching support in windows search (searching "reddit.com" will open Reddit website instead of https://www.google.com/search?q=reddit.com)
+* url searching support in windows search (searching "reddit.com" will open Reddit website instead of https://www.google.com/search?q=reddit.com)
 
--windows widgets support
+* windows widgets support
 
--windows spotlight support
+* windows spotlight support
 
--can change search engine any time using setup (without reinstall)
+* can change search engine any time using setup (without reinstall)
 
-<br>
+- - - - - -
 
 ## Download
 
@@ -44,10 +43,10 @@ Code will be updated according to latest release.
 ----|----|----
 OS|Windows 8.1|Latest Windows 11 Build
 CPU|32-bit Single Core|64-bit Dual Core or Higher
-RAM (Memory)|80MB Free|200MB Free
+RAM (Memory)|80MB Free|100MB Free
 Disk (Storage)|5MB Free|20MB Free
 
-<br>
+- - - - -
 
 ## Program Comparisons
  |Edge Deflector|ChrEdgeFkOff|NoMoreEdge|Search Deflector|MSEdge Redirect
@@ -58,49 +57,42 @@ Installs without Admin|☑| | | |☑, Optionally <sup>*</sup>
 Windows 11 Support| |☑|☑| |☑
 Windows 10 21H2+ Support| |☑|☑| |☑
 Installs System Wide| |☑|☑|☑, Optionally|☑, Optionally <sup>†</sup>
-Update Checker Module| | |☑|☑|☑
-Search Engine Customization| | |8☑,+DDG bangs|14☑|9☑
-Customizable Edge Support| | |☑| |☑
+Update Checker Module| | | |☑|☑
+Search Engine Customization| | |8☑+|14☑|9☑
 Running time|When seached| When Searched|When Searched |When Searched|When Searched/Always
 
-<br>
+- - - - - 
 
 ## Installation
 
 1. Head over to releases
 
-2. Download latest release
+2. Download Setup from latest release
 
 3. Run the setup 
  
-4. Select the search engine 
+4. Select prefrences
 
-5.click install button to install
+5. click install button to install
 
 
-<br>
+ - - - - - 
 
 ## Uninstallation
 1.Run the setup.
 
 2.Click uninstall, it will revert all related changes.
 
-<br>
+- - - - -
 
-## Update NoMoreEdge 
-1.Download setup from latest release.
+## Update Preferences 
+1.Run Setup again
 
-2.Run the setup file.
+2.Change preferences 
 
-3.Click install to install updated NoMoreEdge.
+3.Click update. (reflects immediately)
 
-<br>
-
-## Update search engine 
-1. Download NoMoreEdge setup v1.0.1.0 or higher. 
-2. Select preffered search engine
-3. click update to update preference.
-(Uninstall and reinstall might be needed in some cases.)
+- - - - - - 
 
 ## Privacy
 
