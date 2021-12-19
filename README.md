@@ -21,7 +21,7 @@ Code will be updated according to latest release.
 
 * DuckDuckGo bangs in windows search (with search engine selected).
 
-* Works with any browser. Even Edge (Stable/Beta or Dev) browser.Only search Engine will be changed in case edge is default.
+* Works with any browser. Even Edge (If it is set as default and Keep Edge is checked) browser. Only search Engine will be changed in case edge is default.
 
 * url searching support in windows search (searching "reddit.com" will open Reddit website instead of https://www.google.com/search?q=reddit.com)
 
