@@ -61,7 +61,7 @@ Installs System Wide| |☑|☑|☑, Optionally|☑, Optionally <sup>†</sup>
 Update Checker Module| | |☑|☑|☑
 Search Engine Customization| | |8☑,+DDG bangs|14☑|9☑
 Customizable Edge Support| | |☑| |☑
-Running time|When seached| |When Searched |When Searched|When Searched/Always
+Running time|When seached| When Searched|When Searched |When Searched|When Searched/Always
 
 <br>
 
