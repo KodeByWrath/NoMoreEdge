@@ -29,263 +29,272 @@ namespace NoMoreEdgeSetup
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btn_install = new System.Windows.Forms.Button();
             this.btn_uninstall = new System.Windows.Forms.Button();
-            this.btn_exit = new System.Windows.Forms.Button();
-            this.btn_update = new System.Windows.Forms.Button();
-            this.google = new System.Windows.Forms.RadioButton();
-            this.duckduckgo = new System.Windows.Forms.RadioButton();
-            this.ask = new System.Windows.Forms.RadioButton();
-            this.brave = new System.Windows.Forms.RadioButton();
-            this.ecosia = new System.Windows.Forms.RadioButton();
-            this.yahoo = new System.Windows.Forms.RadioButton();
-            this.yandex = new System.Windows.Forms.RadioButton();
-            this.sogou = new System.Windows.Forms.RadioButton();
-            this.btn_github = new System.Windows.Forms.Button();
-            this.lbl_engine = new System.Windows.Forms.Label();
-            this.lbl_title = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.custom = new System.Windows.Forms.RadioButton();
+            this.predefined = new System.Windows.Forms.RadioButton();
+            this.Eng_btn = new System.Windows.Forms.Button();
+            this.custom_engine = new System.Windows.Forms.TextBox();
+            this.EngineList = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Bang_box = new System.Windows.Forms.CheckBox();
+            this.Edge_box = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_install
             // 
-            this.btn_install.Location = new System.Drawing.Point(332, 12);
+            this.btn_install.BackColor = System.Drawing.Color.Black;
+            this.btn_install.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_install.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_install.Location = new System.Drawing.Point(592, 366);
             this.btn_install.Name = "btn_install";
-            this.btn_install.Size = new System.Drawing.Size(97, 34);
+            this.btn_install.Size = new System.Drawing.Size(168, 61);
             this.btn_install.TabIndex = 0;
             this.btn_install.Text = "Install";
-            this.btn_install.UseVisualStyleBackColor = true;
+            this.btn_install.UseVisualStyleBackColor = false;
             this.btn_install.Click += new System.EventHandler(this.btn_install_Click);
             // 
             // btn_uninstall
             // 
-            this.btn_uninstall.Location = new System.Drawing.Point(332, 52);
+            this.btn_uninstall.BackColor = System.Drawing.Color.Black;
+            this.btn_uninstall.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_uninstall.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btn_uninstall.Location = new System.Drawing.Point(592, 368);
             this.btn_uninstall.Name = "btn_uninstall";
-            this.btn_uninstall.Size = new System.Drawing.Size(97, 32);
+            this.btn_uninstall.Size = new System.Drawing.Size(168, 61);
             this.btn_uninstall.TabIndex = 1;
             this.btn_uninstall.Text = "Uninstall";
-            this.btn_uninstall.UseVisualStyleBackColor = true;
+            this.btn_uninstall.UseVisualStyleBackColor = false;
             this.btn_uninstall.Click += new System.EventHandler(this.btn_uninstall_Click);
             // 
-            // btn_exit
+            // groupBox1
             // 
-            this.btn_exit.Location = new System.Drawing.Point(332, 168);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(97, 34);
-            this.btn_exit.TabIndex = 2;
-            this.btn_exit.Text = "Exit";
-            this.btn_exit.UseVisualStyleBackColor = true;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            this.groupBox1.Controls.Add(this.custom);
+            this.groupBox1.Controls.Add(this.predefined);
+            this.groupBox1.Controls.Add(this.custom_engine);
+            this.groupBox1.Controls.Add(this.EngineList);
+            this.groupBox1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(761, 139);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Engine";
             // 
-            // btn_update
+            // custom
             // 
-            this.btn_update.Location = new System.Drawing.Point(332, 90);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(97, 32);
-            this.btn_update.TabIndex = 3;
-            this.btn_update.Text = "Set Engine";
-            this.btn_update.UseVisualStyleBackColor = true;
-            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
+            this.custom.AutoSize = true;
+            this.custom.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.custom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.custom.Location = new System.Drawing.Point(6, 87);
+            this.custom.Name = "custom";
+            this.custom.Size = new System.Drawing.Size(218, 26);
+            this.custom.TabIndex = 7;
+            this.custom.TabStop = true;
+            this.custom.Text = "Custom Engine Query";
+            this.custom.UseVisualStyleBackColor = true;
+            this.custom.CheckedChanged += new System.EventHandler(this.custom_CheckedChanged);
             // 
-            // google
+            // predefined
             // 
-            this.google.AutoSize = true;
-            this.google.BackColor = System.Drawing.Color.Transparent;
-            this.google.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.google.ForeColor = System.Drawing.Color.White;
-            this.google.Location = new System.Drawing.Point(40, 76);
-            this.google.Name = "google";
-            this.google.Size = new System.Drawing.Size(65, 17);
-            this.google.TabIndex = 4;
-            this.google.TabStop = true;
-            this.google.Text = "Google";
-            this.google.UseVisualStyleBackColor = false;
-            this.google.CheckedChanged += new System.EventHandler(this.google_CheckedChanged);
+            this.predefined.AutoSize = true;
+            this.predefined.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.predefined.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.predefined.Location = new System.Drawing.Point(7, 40);
+            this.predefined.Name = "predefined";
+            this.predefined.Size = new System.Drawing.Size(128, 26);
+            this.predefined.TabIndex = 6;
+            this.predefined.TabStop = true;
+            this.predefined.Text = "PreDefined";
+            this.predefined.UseVisualStyleBackColor = true;
+            this.predefined.CheckedChanged += new System.EventHandler(this.predefined_CheckedChanged);
             // 
-            // duckduckgo
+            // Eng_btn
             // 
-            this.duckduckgo.AutoSize = true;
-            this.duckduckgo.BackColor = System.Drawing.Color.Transparent;
-            this.duckduckgo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.duckduckgo.ForeColor = System.Drawing.Color.Black;
-            this.duckduckgo.Location = new System.Drawing.Point(165, 122);
-            this.duckduckgo.Name = "duckduckgo";
-            this.duckduckgo.Size = new System.Drawing.Size(101, 17);
-            this.duckduckgo.TabIndex = 5;
-            this.duckduckgo.TabStop = true;
-            this.duckduckgo.Text = "DuckDuckGo";
-            this.duckduckgo.UseVisualStyleBackColor = false;
-            this.duckduckgo.CheckedChanged += new System.EventHandler(this.duckduckgo_CheckedChanged);
+            this.Eng_btn.BackColor = System.Drawing.Color.Black;
+            this.Eng_btn.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Eng_btn.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Eng_btn.Location = new System.Drawing.Point(386, 370);
+            this.Eng_btn.Name = "Eng_btn";
+            this.Eng_btn.Size = new System.Drawing.Size(168, 59);
+            this.Eng_btn.TabIndex = 5;
+            this.Eng_btn.Text = "Update";
+            this.Eng_btn.UseVisualStyleBackColor = false;
+            this.Eng_btn.Click += new System.EventHandler(this.Eng_btn_Click);
             // 
-            // ask
+            // custom_engine
             // 
-            this.ask.AutoSize = true;
-            this.ask.BackColor = System.Drawing.Color.Transparent;
-            this.ask.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ask.ForeColor = System.Drawing.Color.White;
-            this.ask.Location = new System.Drawing.Point(40, 99);
-            this.ask.Name = "ask";
-            this.ask.Size = new System.Drawing.Size(46, 17);
-            this.ask.TabIndex = 6;
-            this.ask.TabStop = true;
-            this.ask.Text = "Ask";
-            this.ask.UseVisualStyleBackColor = false;
-            this.ask.CheckedChanged += new System.EventHandler(this.ask_CheckedChanged);
+            this.custom_engine.Location = new System.Drawing.Point(374, 87);
+            this.custom_engine.MaxLength = 50;
+            this.custom_engine.Name = "custom_engine";
+            this.custom_engine.Size = new System.Drawing.Size(374, 32);
+            this.custom_engine.TabIndex = 4;
+            this.custom_engine.TextChanged += new System.EventHandler(this.custom_engine_TextChanged);
             // 
-            // brave
+            // EngineList
             // 
-            this.brave.AutoSize = true;
-            this.brave.BackColor = System.Drawing.Color.Transparent;
-            this.brave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brave.ForeColor = System.Drawing.Color.White;
-            this.brave.Location = new System.Drawing.Point(40, 168);
-            this.brave.Name = "brave";
-            this.brave.Size = new System.Drawing.Size(57, 17);
-            this.brave.TabIndex = 7;
-            this.brave.TabStop = true;
-            this.brave.Text = "brave";
-            this.brave.UseVisualStyleBackColor = false;
-            this.brave.CheckedChanged += new System.EventHandler(this.brave_CheckedChanged);
+            this.EngineList.BackColor = System.Drawing.Color.DimGray;
+            this.EngineList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.EngineList.FormattingEnabled = true;
+            this.EngineList.Items.AddRange(new object[] {
+            "Ask",
+            "Bing",
+            "Brave",
+            "DuckDuckGo",
+            "Ecosia",
+            "Google",
+            "Sogou",
+            "Yadex"});
+            this.EngineList.Location = new System.Drawing.Point(374, 40);
+            this.EngineList.Name = "EngineList";
+            this.EngineList.Size = new System.Drawing.Size(374, 32);
+            this.EngineList.TabIndex = 1;
+            this.EngineList.SelectedIndexChanged += new System.EventHandler(this.EngineList_SelectedIndexChanged);
             // 
-            // ecosia
+            // groupBox2
             // 
-            this.ecosia.AutoSize = true;
-            this.ecosia.BackColor = System.Drawing.Color.Transparent;
-            this.ecosia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ecosia.ForeColor = System.Drawing.Color.White;
-            this.ecosia.Location = new System.Drawing.Point(40, 122);
-            this.ecosia.Name = "ecosia";
-            this.ecosia.Size = new System.Drawing.Size(63, 17);
-            this.ecosia.TabIndex = 8;
-            this.ecosia.TabStop = true;
-            this.ecosia.Text = "Ecosia";
-            this.ecosia.UseVisualStyleBackColor = false;
-            this.ecosia.CheckedChanged += new System.EventHandler(this.ecosia_CheckedChanged);
+            this.groupBox2.Controls.Add(this.Bang_box);
+            this.groupBox2.Controls.Add(this.Edge_box);
+            this.groupBox2.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox2.Location = new System.Drawing.Point(12, 274);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(761, 86);
+            this.groupBox2.TabIndex = 17;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Misc";
             // 
-            // yahoo
+            // Bang_box
             // 
-            this.yahoo.AutoSize = true;
-            this.yahoo.BackColor = System.Drawing.Color.Transparent;
-            this.yahoo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yahoo.ForeColor = System.Drawing.Color.White;
-            this.yahoo.Location = new System.Drawing.Point(40, 191);
-            this.yahoo.Name = "yahoo";
-            this.yahoo.Size = new System.Drawing.Size(61, 17);
-            this.yahoo.TabIndex = 9;
-            this.yahoo.TabStop = true;
-            this.yahoo.Text = "Yahoo";
-            this.yahoo.UseVisualStyleBackColor = false;
-            this.yahoo.CheckedChanged += new System.EventHandler(this.yahoo_CheckedChanged);
+            this.Bang_box.AutoSize = true;
+            this.Bang_box.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Bang_box.Location = new System.Drawing.Point(164, 32);
+            this.Bang_box.Name = "Bang_box";
+            this.Bang_box.Size = new System.Drawing.Size(137, 28);
+            this.Bang_box.TabIndex = 10;
+            this.Bang_box.Text = "DDG Bangs";
+            this.Bang_box.UseVisualStyleBackColor = true;
+            this.Bang_box.CheckedChanged += new System.EventHandler(this.Bang_box_CheckedChanged);
             // 
-            // yandex
+            // Edge_box
             // 
-            this.yandex.AutoSize = true;
-            this.yandex.BackColor = System.Drawing.Color.Transparent;
-            this.yandex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yandex.ForeColor = System.Drawing.Color.White;
-            this.yandex.Location = new System.Drawing.Point(40, 145);
-            this.yandex.Name = "yandex";
-            this.yandex.Size = new System.Drawing.Size(67, 17);
-            this.yandex.TabIndex = 10;
-            this.yandex.TabStop = true;
-            this.yandex.Text = "Yandex";
-            this.yandex.UseVisualStyleBackColor = false;
-            this.yandex.CheckedChanged += new System.EventHandler(this.yandex_CheckedChanged);
+            this.Edge_box.AutoSize = true;
+            this.Edge_box.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Edge_box.Location = new System.Drawing.Point(7, 32);
+            this.Edge_box.Name = "Edge_box";
+            this.Edge_box.Size = new System.Drawing.Size(137, 28);
+            this.Edge_box.TabIndex = 9;
+            this.Edge_box.Text = "Keep Edge";
+            this.Edge_box.UseVisualStyleBackColor = true;
+            this.Edge_box.CheckedChanged += new System.EventHandler(this.Edge_box_CheckedChanged);
             // 
-            // sogou
+            // groupBox3
             // 
-            this.sogou.AutoSize = true;
-            this.sogou.BackColor = System.Drawing.Color.Transparent;
-            this.sogou.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sogou.ForeColor = System.Drawing.Color.White;
-            this.sogou.Location = new System.Drawing.Point(40, 214);
-            this.sogou.Name = "sogou";
-            this.sogou.Size = new System.Drawing.Size(61, 17);
-            this.sogou.TabIndex = 11;
-            this.sogou.TabStop = true;
-            this.sogou.Text = "Sogou";
-            this.sogou.UseVisualStyleBackColor = false;
-            this.sogou.CheckedChanged += new System.EventHandler(this.sogou_CheckedChanged);
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.groupBox3.Controls.Add(this.checkBox7);
+            this.groupBox3.Controls.Add(this.checkBox5);
+            this.groupBox3.Controls.Add(this.checkBox3);
+            this.groupBox3.Controls.Add(this.checkBox2);
+            this.groupBox3.Controls.Add(this.checkBox1);
+            this.groupBox3.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox3.Location = new System.Drawing.Point(12, 158);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(761, 110);
+            this.groupBox3.TabIndex = 18;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Redirects(in progress)";
             // 
-            // btn_github
+            // checkBox1
             // 
-            this.btn_github.BackColor = System.Drawing.Color.Transparent;
-            this.btn_github.BackgroundImage = global::NoMoreEdgeSetup.Properties.Resources.github;
-            this.btn_github.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_github.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_github.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_github.Location = new System.Drawing.Point(332, 128);
-            this.btn_github.Name = "btn_github";
-            this.btn_github.Size = new System.Drawing.Size(97, 34);
-            this.btn_github.TabIndex = 12;
-            this.btn_github.UseVisualStyleBackColor = false;
-            this.btn_github.Click += new System.EventHandler(this.btn_github_Click);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox1.Location = new System.Drawing.Point(7, 32);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(101, 28);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "Search";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // lbl_engine
+            // checkBox2
             // 
-            this.lbl_engine.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_engine.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_engine.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lbl_engine.Location = new System.Drawing.Point(40, 50);
-            this.lbl_engine.Name = "lbl_engine";
-            this.lbl_engine.Size = new System.Drawing.Size(226, 23);
-            this.lbl_engine.TabIndex = 14;
-            this.lbl_engine.Text = "Select Search Engine";
-            this.lbl_engine.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox2.Location = new System.Drawing.Point(575, 32);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(173, 28);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "WebView Apps";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // lbl_title
+            // checkBox3
             // 
-            this.lbl_title.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_title.Font = new System.Drawing.Font("Microsoft PhagsPa", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl_title.ForeColor = System.Drawing.Color.Indigo;
-            this.lbl_title.Location = new System.Drawing.Point(-1, 1);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(170, 24);
-            this.lbl_title.TabIndex = 13;
-            this.lbl_title.Text = "NoMoreEdge Setup";
-            this.lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_title.UseMnemonic = false;
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox3.Location = new System.Drawing.Point(136, 32);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(113, 28);
+            this.checkBox3.TabIndex = 2;
+            this.checkBox3.Text = "Widgets";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // checkBox5
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(316, 222);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 13);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "By Harshal Kudale";
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox5.Location = new System.Drawing.Point(273, 32);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(137, 28);
+            this.checkBox5.TabIndex = 4;
+            this.checkBox5.Text = "Spotlight";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.checkBox7.Location = new System.Drawing.Point(445, 32);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(113, 28);
+            this.checkBox7.TabIndex = 6;
+            this.checkBox7.Text = "BingBar";
+            this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(441, 244);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbl_engine);
-            this.Controls.Add(this.lbl_title);
-            this.Controls.Add(this.btn_github);
-            this.Controls.Add(this.sogou);
-            this.Controls.Add(this.yandex);
-            this.Controls.Add(this.yahoo);
-            this.Controls.Add(this.ecosia);
-            this.Controls.Add(this.brave);
-            this.Controls.Add(this.ask);
-            this.Controls.Add(this.duckduckgo);
-            this.Controls.Add(this.google);
-            this.Controls.Add(this.btn_update);
-            this.Controls.Add(this.btn_exit);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(785, 437);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Eng_btn);
             this.Controls.Add(this.btn_uninstall);
             this.Controls.Add(this.btn_install);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
-            this.Text = "NoMoreEdge Setup";
+            this.Text = "NoMoreEdge";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -293,20 +302,21 @@ namespace NoMoreEdgeSetup
 
         private System.Windows.Forms.Button btn_install;
         private System.Windows.Forms.Button btn_uninstall;
-        private System.Windows.Forms.Button btn_exit;
-        private System.Windows.Forms.Button btn_update;
-        private System.Windows.Forms.RadioButton google;
-        private System.Windows.Forms.RadioButton duckduckgo;
-        private System.Windows.Forms.RadioButton ask;
-        private System.Windows.Forms.RadioButton brave;
-        private System.Windows.Forms.RadioButton ecosia;
-        private System.Windows.Forms.RadioButton yahoo;
-        private System.Windows.Forms.RadioButton yandex;
-        private System.Windows.Forms.RadioButton sogou;
-        private System.Windows.Forms.Button btn_github;
-        private System.Windows.Forms.Label lbl_engine;
-        private System.Windows.Forms.Label lbl_title;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox EngineList;
+        private System.Windows.Forms.TextBox custom_engine;
+        private System.Windows.Forms.Button Eng_btn;
+        private System.Windows.Forms.RadioButton custom;
+        private System.Windows.Forms.RadioButton predefined;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.CheckBox Bang_box;
+        private System.Windows.Forms.CheckBox Edge_box;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
