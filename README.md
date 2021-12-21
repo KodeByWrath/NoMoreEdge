@@ -100,7 +100,7 @@ Running time|When seached| When Searched|When Searched |When Searched|When Searc
 NoMoreEdge does not store or send user URLs and search queries. Queries are modfied in real time and never stored .
 
 File may get flagged by Antivirus. You are free do Download/Check/Compile code yourself.
-[Virustotal](https://www.virustotal.com/gui/file/8b3c3b2eae6b034570e76e87cb32e036eaa24b31e106ab9db66513840e69c091?nocache=1)
+[Virustotal](https://www.virustotal.com/gui/file/a170e71c5d54a15607b941f578574c13b4bfcaf29db4671af80cff50fc152887/detection)
 
 <br>
 
