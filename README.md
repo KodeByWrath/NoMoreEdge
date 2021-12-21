@@ -58,6 +58,7 @@ Windows 11 Support| |☑|☑| |☑
 Windows 10 21H2+ Support| |☑|☑| |☑
 Installs System Wide| |☑|☑|☑, Optionally|☑, Optionally <sup>†</sup>
 Update Checker Module| | | |☑|☑
+Silent install| | |☑| |☑
 Search Engine Customization| | |8☑+|14☑|9☑
 Running time|When seached| When Searched|When Searched |When Searched|When Searched/Always
 
