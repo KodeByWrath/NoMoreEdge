@@ -6,7 +6,10 @@
 
 ![Language: C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 
-Thank you for 1000+ Downloads
+Thank you for donating. It really helps and motivates to keep working on this project- 
+
+David Placko, Tyler Gibson
+
 
 Also from now on NoMoreEdge.exe will be linked from releases and not executable folder(Executables from this folders are just for reference).
 Code will be updated according to latest release.
