@@ -117,3 +117,5 @@ Make sure installed application using setup from latest release, then run `micro
 
 Download setup from latest release. Select desired search engine. Click install. One can also update the search engine without reinstall if the NoMoreEdge.exe is updated.
 [Latest release](https://github.com/HarshalKudale/NoMoreEdge/releases/latest/download/NoMoreEdgeSetup.exe).
+
+Note - Development is currently on hold.
