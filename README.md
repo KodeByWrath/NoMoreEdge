@@ -11,8 +11,7 @@ Thank you for donating. It really helps and motivates to keep working on this pr
 David Placko, Tyler Gibson
 
 
-Also from now on NoMoreEdge.exe will be linked from releases and not executable folder(Executables from this folders are just for reference).
-Code will be updated according to latest release.
+Edge Need to be installed in order to make software work. Software can not intercpt the urls without edge set as default handler for microsoft-edge:// protocol.
 
 ## Disclaimer
 
