@@ -5,10 +5,7 @@
 [![PayPal](https://img.shields.io/badge/Donate%20on-PayPal-00457C.svg?logo=paypal)](https://paypal.me/harshalkudale)
 
 ![Language: C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-Development is paused due to personal work. Will resume once it is over.
-Thank you for donating. It really helps and motivates to keep working on this project- 
-
-David Placko, Tyler Gibson
+I can no longer update this project. This version will continue to work unless MS breaks something. Please ue msedgeredirect for continous support. 
 
 
 Edge Need to be installed in order to make software work. Software can not intercpt the urls without edge set as default handler for microsoft-edge:// protocol.
