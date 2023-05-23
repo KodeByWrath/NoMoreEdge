@@ -5,7 +5,7 @@
 [![PayPal](https://img.shields.io/badge/Donate%20on-PayPal-00457C.svg?logo=paypal)](https://paypal.me/harshalkudale)
 
 ![Language: C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-I can no longer update this project. This version will continue to work unless MS breaks something. Please ue msedgeredirect for continous support. 
+This was a hobby project that I created for my hate towards MS doing monopoly. But since you guys showed up so much love and oh the overwhelming number of downloads, I am creating a actual clean coded and with clean UI app that you can use. I will keep this repo as it and create new repo for new app. This new repo will have all the project files so anyone can build it locally. Stay tuned.
 
 
 Edge Need to be installed in order to make software work. Software can not intercpt the urls without edge set as default handler for microsoft-edge:// protocol.
